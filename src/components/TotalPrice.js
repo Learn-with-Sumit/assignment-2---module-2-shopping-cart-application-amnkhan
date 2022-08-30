@@ -4,7 +4,7 @@ export default function TotalPrice({ totalprice }) {
       <div className="flex justify-center items-center text-center">
         <div className="text-xl font-semibold">
           <p>Total Price</p>
-          <p className="text-5xl">{totalprice}</p>
+          <p className="text-4xl">{totalprice}</p>
         </div>
       </div>
     </div>
