@@ -1,3 +1,4 @@
+// Simple presentational component for PageTitle
 export default function PageTitle() {
   return (
     <div className="grid place-items-center">

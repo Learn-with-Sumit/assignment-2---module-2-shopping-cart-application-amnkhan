@@ -1,5 +1,6 @@
 import { formatter } from "../Hooks/FormatPrice";
 
+// Product UI component
 export default function Product({ title, stock, price, addToCartHandler }) {
   return (
     <div className="bg-white py-4 px-4 shadow-md rounded-lg my-4 mx-4">

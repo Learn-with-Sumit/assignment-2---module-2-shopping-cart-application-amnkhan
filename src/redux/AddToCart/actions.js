@@ -1,5 +1,6 @@
 import { ADD_TO_CART, INCREMENT, DECREMENT } from "./actionTypes";
 
+// Add to cart Action
 export const addToCart = (productId) => {
   return {
     type: ADD_TO_CART,
@@ -9,6 +10,7 @@ export const addToCart = (productId) => {
   };
 };
 
+// Quantity increase action
 export const increase = (productId) => {
   return {
     type: INCREMENT,
@@ -18,6 +20,7 @@ export const increase = (productId) => {
   };
 };
 
+// Quantity decrease action
 export const decrease = (productId) => {
   return {
     type: DECREMENT,

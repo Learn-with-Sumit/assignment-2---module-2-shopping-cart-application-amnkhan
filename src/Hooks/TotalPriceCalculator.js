@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 
+// Calculate the Total Price
 const TotalPriceCalculator = () => {
   const products = useSelector((state) => state);
   let totalPrice = 0;

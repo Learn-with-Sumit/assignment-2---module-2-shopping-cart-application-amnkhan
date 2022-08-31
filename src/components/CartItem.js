@@ -1,3 +1,4 @@
+// Contains the UI for Each CartItem
 export default function CartItem({
   title,
   quantity,

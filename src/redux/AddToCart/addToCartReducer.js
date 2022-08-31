@@ -1,5 +1,6 @@
 import { ADD_TO_CART, INCREMENT, DECREMENT } from "./actionTypes";
 
+// Initial State
 const initialState = [
   {
     id: 1,
@@ -26,6 +27,7 @@ const initialState = [
 
 const addToCartReducer = (state = initialState, action) => {
   switch (action.type) {
+    // Add to cart
     case ADD_TO_CART:
       return state.map((product) => {
         if (product.id === action.payload.productId) {
@@ -40,6 +42,7 @@ const addToCartReducer = (state = initialState, action) => {
           };
         }
       });
+    // Quantiy increase
     case INCREMENT:
       return state.map((product) => {
         if (product.id === action.payload.productId) {
@@ -54,6 +57,7 @@ const addToCartReducer = (state = initialState, action) => {
           };
         }
       });
+    // Quantity decrease
     case DECREMENT:
       return state.map((product) => {
         if (product.id === action.payload.productId) {
@@ -68,6 +72,7 @@ const addToCartReducer = (state = initialState, action) => {
           };
         }
       });
+    // Default
     default:
       return state;
   }

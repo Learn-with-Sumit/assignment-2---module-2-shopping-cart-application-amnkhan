@@ -24,6 +24,7 @@ export default function RightCartContents() {
 
   return (
     <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-4 xxl:col-span-4">
+      {/* Generate CartItems if the product is added to cart */}
       <CartItems>
         {products.map(
           (product) =>
@@ -41,8 +42,11 @@ export default function RightCartContents() {
               />
             )
         )}
+
+        {/* Show total number of items added to the cart */}
         <TotalItem totalItem={totalProducts} />
       </CartItems>
+      {/* Show total price for all the items added to the cart */}
       <TotalPrice totalprice={formatter.format(totalPrice)} />
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 
+// Show Total Items
 export default function TotalItem({ totalItem }) {
   return (
     <div className="flex justify-center items-center text-center">
